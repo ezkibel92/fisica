@@ -1,64 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>proyecto fisica</title>
+    <title>Proyecto Física</title>
+    <link rel="stylesheet" href="portada.css">
 </head>
 <body>
+    <div class="titulo">
+        <h1>Calculadora de Fuerza <br> Ley de Lorentz</h1>
+    </div>
     
-    <h1>Calculadora de porpiedades del campo magnetico</h1> 
+    <div class="padre">
+        <div class="contenido">
+            <div class="seleccion">
+                <form action="">
 
+                <label for="">Particula</label>
+                <select  id="particula">
+                    <option value="">-Particula-</option>
+                    <option value="Protón">Protón</option>
+                    <option value="Electrón">Electrón</option>
+                </select>
 
-    <div>
-        <form action="">
+                <label for="">Campo</label>
+                <select name="camp" id="vectorCampo" >
+                    <option value="">-Campo-</option>
+                    <option value="Entrante">Entrante</option>
+                    <option value="Saliente">Saliente</option>
+                    <option value="Arriba">Arriba</option>
+                    <option value="Abajo">Abajo</option>
+                    <option value="Izquierda">Izquierda</option>
+                    <option value="Derecha">Derecha</option>
+                </select>
 
-            <label for="">Particula</label>
-            <select  id="particula">
-                <option value="Protón">Protón</option>
-                <option value="Electrón">Electrón</option>
-            </select>
-
-            <label for="">Campo</label>
-            <select name="camp" id="vectorCampo" >
-                <option value="Entrante">Entrante</option>
-                <option value="Saliente">Saliente</option>
-                <option value="Arriba">Arriba</option>
-                <option value="Abajo">Abajo</option>
-                <option value="Izquierda">Izquierda</option>
-                <option value="Derecha">Derecha</option>
-            </select>
-
-            <label for="">Velocidad </label>
-            <select name="vel" id="vectorVelocidad" >
-                <option value="Entrante">Entrante</option>
-                <option value="Saliente">Saliente</option>
-                <option value="Arriba">Arriba</option>
-                <option value="Abajo">Abajo</option>
-                <option value="Izquierda">Izquierda</option>
-                <option value="Derecha">Derecha</option>
-            </select>
-
-            <label for="">Valor de velocidad en m/s</label>
+                <label for="">Velocidad </label>
+                <select name="vel" id="vectorVelocidad" >
+                    <option value="">-Volicidad-</option>
+                    <option value="Entrante">Entrante</option>
+                    <option value="Saliente">Saliente</option>
+                    <option value="Arriba">Arriba</option>
+                    <option value="Abajo">Abajo</option>
+                    <option value="Izquierda">Izquierda</option>
+                    <option value="Derecha">Derecha</option>
+                </select>
+            </div>
+<br>
+<br>
+            <label for="">Velocidad en m/s</label><br>
             <input type="number" id="velocidad">
-
-            <label for="">Valor del campo magnetico en T</label>
+<br>
+<br>
+            <label for="">Campo magnetico en T</label><br>
             <input type="number" id="campo">
-
-            <label for="">Angulo que forman los vectores</label>
-            <input type="number" id="angulo">
-
-            <button type="button" onclick="calcular()">Calcular</button>
+<br>
+<br>
+            <label for="">Ángulo que forman los vectores</label><br>
+            <input type="number" id="angulo"><br>
+            <button class="btn" type="button" onclick="calcular()">Calcular</button>
         </form>
         
     </div>
-
-    <div id="imagen">
+    <div class="lorentz">
+        <img src="lorentz.jpg" alt="">
+    </div>
+    <div id="imagen" class="imagen">
 
     </div>
+</div>
 
-<script src="js.js"></script>    
+<div id="error">
+
+</div>
+
+<footer>
+    <h2>Integrantes del proyecto:</h2>
+    <p>| Ezequiel Segundo | Leonardo Silva | Omar Rodriguez | Jordi Otero | Fernando Aguirre |</p>
+</footer>
+<script src="js.js"></script> 
 </body>
 </html>

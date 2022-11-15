@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto fisica</title>
+</head>
+<body>
+    
+    <h1>Calculadora de porpiedades del campo magnetico</h1> 
+
+
+    <div>
+        <form action="">
+
+            <label for="">Particula</label>
+            <select  id="particula">
+                <option value="Protón">Protón</option>
+                <option value="Electrón">Electrón</option>
+            </select>
+
+            <label for="">Campo</label>
+            <select name="camp" id="vectorCampo" >
+                <option value="Entrante">Entrante</option>
+                <option value="Saliente">Saliente</option>
+                <option value="Arriba">Arriba</option>
+                <option value="Abajo">Abajo</option>
+                <option value="Izquierda">Izquierda</option>
+                <option value="Derecha">Derecha</option>
+            </select>
+
+            <label for="">Velocidad </label>
+            <select name="vel" id="vectorVelocidad" >
+                <option value="Entrante">Entrante</option>
+                <option value="Saliente">Saliente</option>
+                <option value="Arriba">Arriba</option>
+                <option value="Abajo">Abajo</option>
+                <option value="Izquierda">Izquierda</option>
+                <option value="Derecha">Derecha</option>
+            </select>
+            <label for="">Valor de velocidad en m/s</label>
+            <input type="number" id="velocidad">
+            <label for="">Valor del campo magnetico en T</label>
+            <input type="number" id="campo">
+            <label for="">Angulo que forman los vectores</label>
+            <input type="number" id="angulo">
+            <button type="button" onclick="calcular()">Calcular</button>
+        </form>
+        
+    </div>
+
+    <div id="imagen">
+
+    </div>
+
+<script src="js.js"></script>    
+</body>
+</html>

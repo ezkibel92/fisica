@@ -1,0 +1,106 @@
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+
+h2{
+    color: brown;
+}
+
+select{
+    border: bisque solid 3px;
+    padding: 5px; 
+    font-size: 15px;
+}
+
+input {
+
+    border: bisque solid 3px;  
+    padding: 5px;
+    font-size: 15px;
+}
+.titulo{
+    height: 15vh;
+    width: 100vw;
+    font-size: 25px;
+    color: brown;
+    background-color: bisque;
+    font-family: Helvetica;
+    text-align: center;
+}
+.contenido {
+    margin: 5vh;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    height: 50vh;
+    width: 50vw;
+}
+
+.btn {
+    display: block;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    border: 1px solid rgb(245, 184, 110);
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    color:rgb(245, 184, 110);
+    cursor: pointer;
+    margin: 50px auto;
+    transition: all .25s;
+    z-index: 1;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: rgb(245, 184, 110);
+    color: rgb(255, 255, 255);
+}
+
+.imagen{
+    margin: 5vh;
+    height: 30vh;
+    width: 50vw;
+}
+
+.padre{
+    display: flex;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 10vh;
+    background-color: bisque;
+    text-align: center;
+}
+
+.lorentz {
+    margin: 5vh;
+}
+
+.lorentz img{
+    border: 5px solid bisque;
+}
+
+.fuerza{
+    color: blue;
+}
+
+.velocidad{
+    color: red;
+}
+
+.campo{
+    color: rgb(196, 196, 32);
+}
+
+.erro{
+    color: red;
+    font-size: 15px;
+}
